@@ -23,7 +23,7 @@ server.use('/api/jokes', authenticate(), jokesRouter)
 // test route
 server.use('/', (req, res) => {
 
-    res.json({ testing: 'hi hello' })
+    res.status(200).json({ testing: 'hi hello' })
 })
 
 module.exports = server
